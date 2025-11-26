@@ -3,15 +3,11 @@
 
 # fphash
 
-fphash is a variant of [Cryptonight-GPU](https://ryo-currency.com/cn-gpu/) algorithm, with parameters below:
+`fphash` is a GPU-friendly Proof-of-Work algorithm designed specifically for [CyberChain](https://cyberchain.xyz/). Inspired by Cryptonight-GPU.
 
-```
-MEMORY = 32 * 1024
-ITER = 0x300
-```
-
-This project provides Go bindings for the original C++ implementation of the Cryptonight-GPU algorithm can be found at [ryo-currency/ryo-currency](https://github.com/ryo-currency/ryo-currency/tree/master/src/crypto/pow_hash).
-
+*   **ASIC/FPGA Resistance:** Heavily utilizes the efficient floating-point units of modern GPUs, making hardware implementation on FPGAs or ASICs difficult and expensive.
+*   **Broad Compatibility:** Designed with a low memory footprint to enable participation across a wide range of GPU models.
+*   **Fast Verification:** Optimized for rapid verification, significantly reducing the load on network nodes.
 
 ## Usage
 
